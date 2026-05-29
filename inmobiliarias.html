@@ -81,6 +81,40 @@ transform:translateY(-4px);
 border:1px solid rgba(212,175,55,.40);
 }
 
+.company-premium-card{
+position:relative;
+border:1px solid rgba(212,175,55,.35);
+}
+
+.company-torrez{
+background:
+linear-gradient(rgba(0,0,0,.68),rgba(0,0,0,.82)),
+url('images/banner-torrez.jpg');
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+}
+
+.company-premium-card .company-info h2{
+text-shadow:0 4px 20px rgba(0,0,0,.6);
+}
+
+.company-premium-card::before{
+content:"INMOBILIARIA PREMIUM";
+
+position:absolute;
+top:25px;
+right:30px;
+
+font-size:18px;
+font-weight:700;
+letter-spacing:3px;
+
+color:#d4af37;
+text-transform:uppercase;
+} 
+
 .premium-card{
 position:relative;
 
@@ -220,7 +254,7 @@ Conoce sus propiedades, experiencia y especialidades.
 
 <!-- INMOBILIARIA 1 -->
 
-<div class="company-card premium-card">
+<div class="company-card company-premium-card company-torrez">
 
 <div class="company-logo">
 

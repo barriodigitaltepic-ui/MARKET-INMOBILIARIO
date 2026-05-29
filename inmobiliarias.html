@@ -1,1 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Inmobiliarias | Barrio Digital Inmobiliario</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Montserrat',sans-serif;
+background:
+linear-gradient(rgba(0,0,0,.70),rgba(0,0,0,.90)),
+url('images/inmobiliarias-bg.jpg');
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+color:white;
+overflow-x:hidden;
+}
+
+.hero{
+padding:140px 8% 80px;
+text-align:center;
+}
+
+.hero h1{
+font-family:'Playfair Display',serif;
+font-size:70px;
+color:#d4af37;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:900px;
+margin:auto;
+font-size:20px;
+line-height:1.9;
+color:#eee;
+}
+
+.directory{
+max-width:1400px;
+margin:auto;
+padding:0 8% 100px;
+display:flex;
+flex-direction:column;
+gap:30px;
+}
+
+.company-card{
+display:grid;
+grid-template-columns:220px 1fr auto;
+gap:30px;
+align-items:center;
+
+background:rgba(0,0,0,.32);
+backdrop-filter:blur(12px);
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:35px;
+
+padding:25px;
+
+transition:.3s;
+}
+
+.company-card:hover{
+transform:translateY(-4px);
+border:1px solid rgba(212,175,55,.40);
+}
+
+.company-logo img{
+width:180px;
+height:180px;
+object-fit:contain;
+}
+
+.company-info h2{
+font-family:'Playfair Display',serif;
+font-size:38px;
+color:#d4af37;
+margin-bottom:10px;
+}
+
+.location{
+font-size:16px;
+color:#ccc;
+margin-bottom:10px;
+}
+
+.properties{
+display:inline-block;
+padding:8px 16px;
+border-radius:30px;
+background:rgba(212,175,55,.12);
+color:#d4af37;
+margin-bottom:15px;
+}
+
+.company-info p{
+line-height:1.8;
+color:#ddd;
+}
+
+.btn{
+display:inline-block;
+padding:15px 28px;
+border-radius:40px;
+text-decoration:none;
+font-weight:700;
+transition:.3s;
+}
+
+.btn-gold{
+background:#d4af37;
+color:#000;
+}
+
+.btn-gold:hover{
+background:white;
+transform:translateY(-3px);
+}
+
+.back-home{
+text-align:center;
+padding-bottom:80px;
+}
+
+footer{
+padding:40px;
+text-align:center;
+background:rgba(0,0,0,.55);
+backdrop-filter:blur(8px);
+color:#ccc;
+}
+
+@media(max-width:900px){
+
+.hero h1{
+font-size:45px;
+}
+
+.company-card{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.company-logo img{
+width:150px;
+height:150px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<h1>Inmobiliarias</h1>
+
+<p>
+Explora las inmobiliarias afiliadas a Barrio Digital Inmobiliario.
+Conoce sus propiedades, experiencia y especialidades.
+</p>
+
+</section>
+
+<section class="directory">
+
+<!-- INMOBILIARIA 1 -->
+
+<div class="company-card">
+
+<div class="company-logo">
+
+<img src="images/torrez-maldonado-logo.png"
+alt="Torrez & Maldonado">
+
+</div>
+
+<div class="company-info">
+
+<h2>Torrez & Maldonado</h2>
+
+<div class="location">
+Puerto Vallarta · Riviera Nayarit · Tepic
+</div>
+
+<div class="properties">
+40 propiedades disponibles
+</div>
+
+<p>
+
+Especialistas en propiedades residenciales,
+inversión patrimonial, terrenos comerciales,
+preventa y desarrollos estratégicos.
+
+</p>
+
+</div>
+
+<div>
+
+<a class="btn btn-gold"
+href="https://ventasrodrigomaldonado-ux.github.io/RODRIGO-MALDONADO-PERFIL/"
+target="_blank">
+
+Conócenos
+
+</a>
+
+</div>
+
+</div>
+
+<!-- AQUI VAN MAS INMOBILIARIAS -->
+
+</section>
+
+<div class="back-home">
+
+<a class="btn btn-gold"
+href="index.html">
+
+Volver al inicio
+
+</a>
+
+</div>
+
+<footer>
+
+© Barrio Digital Inmobiliario
+
+</footer>
+
+</body>
+</html>

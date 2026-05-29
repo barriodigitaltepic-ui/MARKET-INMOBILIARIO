@@ -1,1 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Market Inmobiliario | Barrio Digital</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Montserrat',sans-serif;
+background:#0a0a0a;
+color:white;
+overflow-x:hidden;
+}
+
+/* HERO */
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:100px 8%;
+background:
+linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.85)),
+url('images/market-hero.jpg');
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+}
+
+.hero-content{
+max-width:1000px;
+}
+
+.hero h1{
+font-family:'Playfair Display',serif;
+font-size:80px;
+color:#d4af37;
+margin-bottom:25px;
+}
+
+.hero p{
+font-size:22px;
+line-height:1.9;
+color:#eee;
+max-width:850px;
+margin:auto;
+}
+
+/* SECCIONES */
+
+.section{
+padding:100px 8%;
+}
+
+.section-title{
+font-family:'Playfair Display',serif;
+font-size:48px;
+text-align:center;
+color:#d4af37;
+margin-bottom:50px;
+}
+
+/* TARJETAS */
+
+.category-card{
+position:relative;
+height:500px;
+border-radius:35px;
+overflow:hidden;
+margin-bottom:50px;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+.category-overlay{
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.55);
+}
+
+.category-content{
+position:relative;
+z-index:2;
+max-width:800px;
+padding:40px;
+}
+
+.category-content h2{
+font-family:'Playfair Display',serif;
+font-size:60px;
+color:#d4af37;
+margin-bottom:20px;
+}
+
+.category-content p{
+font-size:20px;
+line-height:1.9;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 30px;
+border-radius:40px;
+text-decoration:none;
+font-weight:700;
+transition:.3s;
+}
+
+.btn-gold{
+background:#d4af37;
+color:#000;
+}
+
+.btn-gold:hover{
+background:white;
+transform:translateY(-3px);
+}
+
+/* FONDOS */
+
+.inmobiliarias{
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.70)),
+url('images/inmobiliarias-banner.jpg');
+background-size:cover;
+background-position:center;
+}
+
+.asesores{
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.70)),
+url('images/asesores-banner.jpg');
+background-size:cover;
+background-position:center;
+}
+
+/* BARRIO DIGITAL */
+
+.brand{
+padding:100px 8%;
+text-align:center;
+background:#111;
+}
+
+.brand-logo{
+max-width:280px;
+margin-bottom:30px;
+}
+
+.brand p{
+max-width:900px;
+margin:auto;
+line-height:2;
+font-size:18px;
+color:#ddd;
+}
+
+.brand-buttons{
+margin-top:40px;
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+/* FOOTER */
+
+footer{
+padding:50px;
+background:#000;
+text-align:center;
+}
+
+footer a{
+color:#d4af37;
+text-decoration:none;
+margin:0 15px;
+}
+
+footer p{
+margin-top:20px;
+color:#999;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.hero h1{
+font-size:48px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.category-content h2{
+font-size:40px;
+}
+
+.category-card{
+height:400px;
+}
+
+.brand-buttons{
+flex-direction:column;
+align-items:center;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Market Inmobiliario</h1>
+
+<p>
+La plataforma de Barrio Digital diseñada para conectar inmobiliarias,
+asesores independientes, inversionistas y compradores en un solo lugar.
+</p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="category-card inmobiliarias">
+
+<div class="category-overlay"></div>
+
+<div class="category-content">
+
+<h2>Inmobiliarias</h2>
+
+<p>
+Descubre inmobiliarias afiliadas a Barrio Digital Inmobiliario,
+sus propiedades disponibles y sus perfiles profesionales.
+</p>
+
+<a class="btn btn-gold"
+href="inmobiliarias.html">
+
+Explorar inmobiliarias
+
+</a>
+
+</div>
+
+</div>
+
+<div class="category-card asesores">
+
+<div class="category-overlay"></div>
+
+<div class="category-content">
+
+<h2>Asesores Independientes</h2>
+
+<p>
+Conecta directamente con asesores especializados en compra,
+venta, renta e inversión inmobiliaria.
+</p>
+
+<a class="btn btn-gold"
+href="asesores.html">
+
+Conocer asesores
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="brand">
+
+<img src="images/logo-barrio-digital.png"
+class="brand-logo"
+alt="Barrio Digital">
+
+<p>
+
+Barrio Digital Inmobiliario nace para impulsar la visibilidad de propiedades,
+asesores e inmobiliarias mediante herramientas digitales, perfiles premium
+y estrategias enfocadas en generar oportunidades de negocio.
+
+</p>
+
+<div class="brand-buttons">
+
+<a class="btn btn-gold"
+href="https://barriodigitaltepic-ui.github.io/inscribete-barrio-digital/"
+target="_blank">
+
+Solicitar perfil
+
+</a>
+
+<a class="btn btn-gold"
+href="https://barriodigitaltepic-ui.github.io/FORMULARIO-PUBLICAR-PROPIEDAD-MARKET/"
+target="_blank">
+
+Publicar propiedad
+
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<a href="inmobiliarias.html">Inmobiliarias</a>
+
+<a href="asesores.html">Asesores</a>
+
+<a href="market.html">Marketplace</a>
+
+<a href="https://wa.me/523221340289">WhatsApp</a>
+
+<p>
+© Barrio Digital Inmobiliario
+</p>
+
+</footer>
+
+</body>
+</html>

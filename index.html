@@ -82,7 +82,8 @@ margin-bottom:50px;
 
 .category-card{
 position:relative;
-height:500px;
+min-height:560px;
+height:auto;
 border-radius:35px;
 overflow:hidden;
 margin-bottom:50px;
@@ -90,6 +91,7 @@ display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
+padding:40px 20px;
 }
 
 .category-overlay{
@@ -220,6 +222,12 @@ color:#999;
 /* RESPONSIVE */
 
 @media(max-width:900px){
+
+.category-card{
+min-height:620px;
+height:auto;
+padding:45px 18px;
+}  
 
 .hero h1{
 font-size:48px;
